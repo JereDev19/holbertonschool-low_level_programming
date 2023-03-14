@@ -18,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	space = (char *)malloc(sizeof(size) * nmemb);
+	space = (char *)malloc(sizeof(int) * nmemb);
 
 	if (space == NULL)
 		return (NULL);
