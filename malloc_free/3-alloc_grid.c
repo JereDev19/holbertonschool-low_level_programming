@@ -4,8 +4,8 @@
  * alloc_grid - Return a pointer to a 2 dimensional
  * array of integers.
  *
- * @width: Rows of matriz.
- * @height: Columns of matriz.
+ * @width: Columns of matriz.
+ * @height: Rows of matriz.
  * Return: int.
  *
  * Author: Jeremias Erba.
