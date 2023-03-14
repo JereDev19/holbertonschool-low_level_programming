@@ -18,15 +18,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	space = (char *)malloc(sizeof(int) * nmemb);
+	space = (char *)malloc(size * nmemb);
 
 	if (space == NULL)
 		return (NULL);
 
 	for (iterator = 0; iterator < nmemb * size; iterator++)
-	{
 		space[iterator] = 0;
-	}
-	return (space);
+
 	free(space);
+	return (space);
 }
